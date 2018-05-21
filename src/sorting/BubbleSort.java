@@ -1,4 +1,4 @@
-package gfg.algorithms.Sorting;
+package sorting;
 
 public class BubbleSort 
 {
@@ -6,10 +6,9 @@ public class BubbleSort
 	{
 		System.out.println("\nImplementing Bubble Sort for Numbers......");
 
-		boolean swapped;
 		for(int i = 0; i < n - 1; i++)
 		{
-			swapped = false;
+			boolean swapped = false;
 			for(int j = 0; j < n - i - 1; j++)
 			{
 				if (arr[j] > arr[j+1])

@@ -1,4 +1,4 @@
-package gfg.algorithms.Sorting;
+package sorting;
 
 import java.util.Arrays;
 public class SortingMain 
@@ -7,11 +7,11 @@ public class SortingMain
 	public static void main(String[] args) 
 	{
 //		int[] arr = {5,2,6,7,8,12,34,20,3,67};
-		int[] arr = {38, 27, 43,3,9,82,10};//2,6,3,4,5,1
+		int[] arr = {38, 27, 43};//2,6,3,4,5,1
 		int n = arr.length;
 		
-		/*String[] arrStr = {"GeeksforGeeks","Quiz","Practice","Gblogs","Coding"};
-		int arrSize = arrStr.length;*/
+		String[] arrStr = {"GeeksforGeeks","Quiz","Practice","Gblogs","Coding"};
+		int arrSize = arrStr.length;
 		
 		System.out.println("Array Before Sorting...." + Arrays.toString(arr));
 		

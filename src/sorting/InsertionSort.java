@@ -1,4 +1,4 @@
-package gfg.algorithms.Sorting;
+package sorting;
 
 public class InsertionSort {
 

@@ -1,4 +1,4 @@
-package gfg.algorithms.Sorting;
+package sorting;
 
 import java.util.Arrays;
 
@@ -9,14 +9,14 @@ public class MergeSort
 		mergesort(arr,0,n-1);
 	}
 	public static void mergesort(int[] arr,int li, int ri)
-	{	
+	{
 		if (li < ri)
 		{
 			int mi = (li + ri ) / 2;
 			System.out.println("mergesort...mi..." + mi);
 			mergesort(arr,li,mi);
 			mergesort(arr,mi+1,ri);
-			merge(arr,li,mi,ri);			
+			merge(arr,li,mi,ri);
 		}
 	}
 	public static void merge(int[] arr, int li,int mi, int ri)
@@ -38,8 +38,8 @@ public class MergeSort
 		/*Copy data to temp arrays*/
 		for (int i=0; i<n1; i++)
 			L[i] = arr[li + i];
-	    for (int j=0; j<n2; j++)
-            R[j] = arr[mi + 1+ j];
+	    for (int i=0; i<n2; i++)
+            R[i] = arr[mi + 1+ i];
 	    
 	    System.out.println("L..." + Arrays.toString(L));
 	    System.out.println("R..." + Arrays.toString(R));
@@ -49,7 +49,7 @@ public class MergeSort
         // Initial indexes of first and second subarrays
         int i = 0, j = 0;
 	    
-        // Initial index of merged subarry array
+        // Initial index of merged subarray
         int k = li;
         System.out.println("k..." + k);
         while (i < n1 && j < n2)
